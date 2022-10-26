@@ -77,6 +77,7 @@ function App() {
           </div>
         </div>
         <div className='col-lg-4 mt-3 bor'>
+          <h2>Cart</h2>
           <Cartlist cartitems={cartitems} removecart={removecart}></Cartlist>
         </div>
       </div>
