@@ -7,8 +7,8 @@ function Cartlist({cartitems,removecart}) {
             <>
                 <ol className="list-group list-group-numbered">
                     {
-                        cartitems.map((items) => {
-                            return <li className="list-group-item d-flex justify-content-between align-items-start">
+                        cartitems.map((items,index) => {
+                            return <li key={index}className="list-group-item d-flex justify-content-between align-items-start">
                                 <div className="ms-2 me-auto">
                                     <div className="fw-bold">{items.name}</div>
                                     Rs.{items.price}

@@ -70,8 +70,8 @@ function App() {
         <div className='col-lg-8'> 
           <div className='row'>
          {
-           bikes.map((output)=>{
-            return<Cartproduct all={output} cart={addcart} cartitems={cartitems}></Cartproduct>
+           bikes.map((output,index)=>{
+            return<Cartproduct key={index} all={output} cart={addcart} cartitems={cartitems}></Cartproduct>
            })
           }   
           </div>
